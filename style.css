@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #E74C3C;
+        }
+
+        canvas {
+            border: 1px solid #000;
+            display: none;
+        }
+
+        #gameOverDialog {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #startButton, #retryButton {
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50; /* Green */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        #score, #highScore {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="flappyCanvas" width="800" height="500"></canvas>
+    <div id="gameOverDialog">
+        <h2>Game Over</h2>
+        <p id="score">Score: 0</p>
+        <p id="highScore">High Score: 0</p>
+        <button id="retryButton">Retry</button>
+    </div>
+    <script>
+        // JavaScript code goes here
+    </script>
+    <script>
+        // Additional JavaScript code goes here
+    </script>
+</body>
+</html>
